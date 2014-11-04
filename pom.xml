@@ -325,6 +325,16 @@
   <build>
     <pluginManagement>
       <plugins>
+          <!-- atlassian -->
+          <plugin>
+              <groupId>org.sonatype.plugins</groupId>
+              <artifactId>nexus-staging-maven-plugin</artifactId>              
+              <configuration>
+                  <skipNexusStagingDeployMojo>true</skipNexusStagingDeployMojo>
+              </configuration>
+          </plugin>
+              
+          
         <plugin>
           <groupId>org.codehaus.plexus</groupId>
           <artifactId>plexus-component-metadata</artifactId>
